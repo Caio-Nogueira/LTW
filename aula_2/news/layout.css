@@ -40,6 +40,7 @@ body > header #signup {
 #menu li {
     display: block;
     flex: 1;
+    background-color: white;
 }
 
 aside {
@@ -71,3 +72,28 @@ body > footer {
     align-self: end;
     margin-right: 1em;
 }
+
+.comments::after{
+    content: " comments";
+}
+
+.comments::before{
+    content: " ";
+}
+
+.date::before{
+    content: " ";
+}
+
+#news footer .author:before{
+    content: "By ";
+}
+
+#news footer .tags {
+    margin-right: 1em;
+  }
+  
+  #news footer .comments {
+    margin-left: 1em;
+  }
+  

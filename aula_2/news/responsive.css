@@ -40,16 +40,18 @@
         color: white;
     }
 
-    #menu ul {
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        display: none;
+    #menu ul{
+        display: block;
+        max-height: 0;
+        opacity: 0;
+        -webkit-transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        overflow: hidden;   
+        
     }
 
     #hamburger:checked + .hamburger + ul li{
         max-height: 1em;
-        padding: 1em;
         opacity: 1;
     }
     
@@ -60,9 +62,12 @@
 
     #hamburger:checked ~ ul{
         max-height: 20em;
-        margin-left: 2.5em;
         opacity: 1;
         display: block;
+    }
+
+    #menu li {
+        transition: all .3s ease-in-out;
     }
 
     #menu li:nth-child(1) {

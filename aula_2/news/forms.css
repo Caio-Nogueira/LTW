@@ -1,0 +1,14 @@
+#register h1, #login h1{
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 70%;
+    margin-right: 2em;
+}

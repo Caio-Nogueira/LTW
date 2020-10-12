@@ -2,6 +2,7 @@ html{
     font-family: Verdana, Georgia;
     margin-left: 4em;
     margin-right: 4em;
+
 }
 
 body > header {
@@ -113,6 +114,8 @@ img {
 
 #news article {
     position: relative;
+    background-color: white;
+    padding-left: 1em;
 }
 
 #news article > header {
@@ -131,7 +134,7 @@ img {
 }
 
 #news article p:first-of-type::first-letter{
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 
@@ -152,3 +155,4 @@ body footer{
     padding: 0.1em;
     margin-top: 1em;
 }
+
